@@ -64,7 +64,7 @@ $(ST2_VIRTUALENV_DIR)/lib/$(PYTHON_VERSION)/site-packages/pytablewriter: $(ST2_V
 	. $(ST2_VIRTUALENV_DIR)/bin/activate; ./scripts/generate-internal-triggers-table.py
 	. $(ST2_VIRTUALENV_DIR)/bin/activate; ./scripts/generate-available-permission-types-table.py
 	@echo
-	. $(VIRTUALENV_DIR)/bin/activate; $(SPHINXBUILD) -W -b html $(DOC_SOURCE_DIR) $(DOC_BUILD_DIR)/html
+	. $(VIRTUALENV_DIR)/bin/activate; $(SPHINXBUILD) -vvv -W -b html $(DOC_SOURCE_DIR) $(DOC_BUILD_DIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(DOC_BUILD_DIR)/html."
 
@@ -162,7 +162,7 @@ $(VIRTUALENV_DIR)/bin/activate:
 	@echo
 	@echo "==================== st2docs virtualenv ===================="
 	@echo
-	virtualenv --python=$(PYTHON_VERSION) $(VIRTUALENV_DIR)
+	python3 -m venv $(VIRTUALENV_DIR)
 	touch $@
 
 $(ST2_VIRTUALENV_DIR)/installed_runners: $(ST2_VIRTUALENV_DIR)/done
