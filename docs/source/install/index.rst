@@ -92,10 +92,10 @@ For more details on reference deployments, or OS-specific installation instructi
 
     Reference Deployment Overview <overview>
     system_requirements
-    Ubuntu 20.04 <u20>
-    Ubuntu 22.04 <u22>
-    RHEL 8 and binary compatible clones <rhel8>
-    RHEL 9 and binary compatible clones <rhel9>
+    Ubuntu 20.04 Focal <u20>
+    Ubuntu 22.04 Jammy <u22>
+    RedHat Enterprise Linux 8 compatible <rhel8>
+    RedHat Enterprise Linux 9 compatible <rhel9>
     Vagrant / OVA <vagrant>
     Docker <docker>
     Ansible Playbooks <ansible>
